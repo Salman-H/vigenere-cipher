@@ -29,5 +29,9 @@ void encipher(string key, string plaintext)
     // iterate over plaintext and key, converting p to ciphertext
     for (int i = 0, j = 0; i < p_len; i++)
     {
+	    // only alphabets in p are enciphered
+        if ( isalpha(plaintext[i]) ) 
+        {
+	    }
     }
 }
