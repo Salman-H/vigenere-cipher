@@ -22,4 +22,12 @@ int main(int argc, string argv[])
  */ 
 void encipher(string key, string plaintext)
 {
+    // lengths of key and plaintext
+    int k_len = strlen(key);
+    int p_len = strlen(plaintext);
+	
+    // iterate over plaintext and key, converting p to ciphertext
+    for (int i = 0, j = 0; i < p_len; i++)
+    {
+    }
 }
