@@ -32,6 +32,9 @@ void encipher(string key, string plaintext)
 	    // only alphabets in p are enciphered
         if ( isalpha(plaintext[i]) ) 
         {
+		    // determine j: current index of key
+            j = j % k_len;
+			
 	    }
     }
 }
