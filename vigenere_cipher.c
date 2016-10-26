@@ -42,6 +42,10 @@ void encipher(string key, string plaintext)
             // determine 0-based int value of key char at current index j
             int k_j;
             k_j = tolower(key[j]) - 'a';
+		    
+		    // determine current cipher shift
+            int shift;
+            shift = ( p_i + k_j ) % 26;
 			
 	    }
     }
