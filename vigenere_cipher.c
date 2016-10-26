@@ -35,6 +35,14 @@ void encipher(string key, string plaintext)
 		    // determine j: current index of key
             j = j % k_len;
 			
+		    // determine 0-based int value of plaintext char at current index i
+            int p_i;
+            p_i = tolower(plaintext[i]) - 'a';
+                    
+            // determine 0-based int value of key char at current index j
+            int k_j;
+            k_j = tolower(key[j]) - 'a';
+			
 	    }
     }
 }
