@@ -37,6 +37,9 @@ int main(int argc, string argv[])
     printf("plaintext: ");
     string plaintext = get_string();
 	
+    // proceed with enciphering using vigenere cipher
+    encipher(key, plaintext);
+	
     return 0;
 }
 
