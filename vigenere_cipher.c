@@ -20,6 +20,16 @@ int main(int argc, string argv[])
         return 1;
     }
 	
+    // ensure argv[1] has all alphabetical chars
+    for (int i = 0, n = strlen(argv[1]); i < n; i++)
+    {
+        if ( !isalpha(argv[1][i]) )
+        {
+            printf("Usage: ./vigenere k\n");
+            return 1;
+        }
+    }
+	
     return 0;
 }
 
