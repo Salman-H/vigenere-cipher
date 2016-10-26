@@ -13,6 +13,13 @@ void encipher(string key, string plaintext);
 
 int main(int argc, string argv[])
 {
+    // ensure program executes with exactly 2 args
+    if (argc != 2 )
+    {
+        printf("Usage: ./vigenere_cipher k\n");
+        return 1;
+    }
+	
     return 0;
 }
 
