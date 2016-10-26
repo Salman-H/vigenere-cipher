@@ -26,6 +26,8 @@ void encipher(string key, string plaintext)
     int k_len = strlen(key);
     int p_len = strlen(plaintext);
 	
+	string ciphertext;
+	
     // iterate over plaintext and key, converting p to ciphertext
     for (int i = 0, j = 0; i < p_len; i++)
     {
@@ -58,6 +60,12 @@ void encipher(string key, string plaintext)
                 c_i = shift + 'a';
             }
 			
+		    // update ciphertext char
+            ciphertext[i] = c_i;
+			
+		    // update current index of key
+		    j++;
 	    }
     }
+    printf("ciphertext: %s\n", ciphertext);
 }
