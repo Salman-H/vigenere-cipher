@@ -30,6 +30,13 @@ int main(int argc, string argv[])
         }
     }
 	
+    // get key
+    string key = argv[1];
+
+    // get plaintext
+    printf("plaintext: ");
+    string plaintext = get_string();
+	
     return 0;
 }
 
