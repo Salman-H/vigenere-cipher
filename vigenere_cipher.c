@@ -47,6 +47,17 @@ void encipher(string key, string plaintext)
             int shift;
             shift = ( p_i + k_j ) % 26;
 			
+		    // apply shift to get current cipher char while preserving case
+            char c_i;
+            if ( isupper(plaintext[i]) )
+            {
+                c_i = shift + 'A';
+            }
+            else
+            {
+                c_i = shift + 'a';
+            }
+			
 	    }
     }
 }
